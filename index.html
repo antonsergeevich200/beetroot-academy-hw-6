@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Форма</h1>
+        <form action="https://hook.eu2.make.com/3v79iuam6rf96apg3sx7y2almjqck1qc" method="POST">
+            <fieldset>
+                <legend>Особисті дані</legend>
+                <p>
+                    <label for="fullName">Повне Ім'я</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Введіть своє і'мя"
+                        list="names"
+                        minlength="2"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Введіть ел. адресу"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="password1">Пароль</label>
+                    <input
+                        type="password"
+                        id="password1"
+                        name="password1"
+                        placeholder="Введіть пароль"
+                        minlength="4"
+                        maxlength="8"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="password2">Підтвердіть Пароль</label>
+                    <input
+                        type="password"
+                        id="password2"
+                        name="password2"
+                        placeholder="Введіть пароль ще раз"
+                        minlength="4"
+                        maxlength="8"
+                        required
+                    />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Додаткова інформація</legend>
+                <div class="radio-block">
+                    <p class="radio-p">Стать</p>
+                    <ul>
+                        <li>
+                            <label class="standard">
+                                Чоловіча
+                                <input 
+                                    type="radio" 
+                                    name="sex" 
+                                    value="male" 
+                                    required 
+                                />
+                            </label>
+                        </li>
+                        <li>
+                            <label class="standard">
+                                Жіноча
+                                <input 
+                                    type="radio" 
+                                    name="sex"
+                                    value="female" 
+                                    required 
+                                />
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    <label for="age">Вік</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        placeholder="Скільки вам років?"
+                        min="0"
+                        required
+                    />
+                </p>
+                <p>
+                    <label for="course">Курс</label>
+                    <select id="course" name="course" required>
+                        <option value="">Виберіть курс</option>
+                        <option value="Front-End">Front-End</option>
+                        <option value="Back-End">Back-End</option>
+                        <option value="Project Management">Project Management</option>
+                        <option value="QA Manual">QA Manual</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Контактна інформація</legend>
+                <p>
+                    <label for="address">Повна адреса</label>
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="5"
+                        maxlength="100"
+                        minlength="10"
+                        placeholder="Країна, регіон, місто/ селище, вулиця"
+                        required
+                    ></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <label>
+                    <input 
+                        type="checkbox" 
+                        name="agree" 
+                        required 
+                    />
+                    Я погоджуюсь з обробкою персональних даних
+                </label>
+            </p>
+            <div class="buttons">
+                <button type="reset">Очистити форму</button>
+                <button type="submit">Зареєструватися</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
